@@ -31,5 +31,5 @@ def generate_ticker(text: str):
 
 
 if __name__ == '__main__':
-    generate_ticker(input(str()))
+    generate_ticker(input())
 
