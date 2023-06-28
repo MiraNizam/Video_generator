@@ -4,7 +4,7 @@
 
 - Склонируйте репозиторий:
 ```
-  git clone
+  git clone https://github.com/MiraNizam/Video_generator.git
 ```
 - Настройте и активируйте виртуальное окружение: 
 ```
