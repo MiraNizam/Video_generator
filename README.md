@@ -17,13 +17,24 @@ source env/bin/activate
 ```
 pip install -r requirements.txt
 ```
-- Запустите файл командой
+Чтобы запустить проект:
+
+необходим файл .env со следующей информацией:
+
+SECRET_KEY
+DEBUG
+
+Запустите команду: 
 ```
- python main.py
+python manage.py runserver
 ```
+Переходите по ссылке:
+
+```Starting development server at http://127.0.0.1:8000/```
+
 Пример ввода:
 ```
-Пора пить чай!
+http://127.0.0.1:8000/runtext/?text=булочка
 ```
 Пример вывода:
 ```
