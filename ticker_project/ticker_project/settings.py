@@ -11,7 +11,7 @@ SECRET_KEY = env.str("SECRET_KEY", default="REPLACE_ME")
 
 DEBUG = env.bool('DEBUG', default=False)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '127.0.0.1:8000', 'localhost:8000', 'colab.research.google.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'colab.research.google.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
