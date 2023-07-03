@@ -6,5 +6,5 @@ from . import views
 
 urlpatterns = [
     path("", views.home),
-    path("runtext/", views.runtext)
-]
+    path("runtext/", views.download_video),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
