@@ -1,4 +1,5 @@
 from moviepy.editor import *
+from django.conf import settings
 
 
 def generate_ticker(text: str):
@@ -27,7 +28,10 @@ def generate_ticker(text: str):
     final_video_clip = CompositeVideoClip([background_video_clip, txt_mov])
 
     # Рендерим видео
-    final_video_clip.write_videofile('ticker.mp4', fps=fps)
+    file_path = os.path.join(settings.MEDIA_ROOT, 'ticker.mp4')
+    final_video_clip.write_videofile(file_path, fps=fps)
+
+    return file_path
 
 
 if __name__ == '__main__':
