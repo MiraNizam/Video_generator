@@ -17,13 +17,6 @@ source env/bin/activate
 ```
 pip install -r requirements.txt
 ```
-Чтобы запустить проект:
-
-необходим файл .env со следующей информацией:
-
-SECRET_KEY
-DEBUG
-
 Запустите команду: 
 ```
 python manage.py runserver
@@ -45,7 +38,7 @@ Moviepy - Done !
 Moviepy - video ready ticker.mp4
 ```
 
-Находим в папке с проектом файл .mp4 
+Началось скачивание .mp4 
 
 Готово!
 
